@@ -10,6 +10,9 @@ import org.openqa.selenium.support.ui.Select;
 
 public class RegPage{
 	
+	WebDriver driver;
+	
+	
 	//creating Object repo
 
 	@FindBy (xpath="//a[contains(text(),'Register')]")
@@ -88,6 +91,11 @@ public class RegPage{
 
 		
 	}
+	
+	public RegPage() {
+		super();
+	}
+	
 
 	public  void fillForm(){
 		register.click();

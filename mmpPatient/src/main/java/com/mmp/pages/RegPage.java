@@ -8,12 +8,17 @@ import org.openqa.selenium.support.ui.Select;
 
 
 
-public class RegPage{
+public class RegPage {
 	
-	WebDriver driver;
+	 WebDriver driver;
+
+	
+		public RegPage(WebDriver driver) {
+			this.driver=driver;
+		}
 	
 	
-	//creating Object repo
+	//creating Object repository
 
 	@FindBy (xpath="//a[contains(text(),'Register')]")
 	WebElement register;
@@ -86,18 +91,12 @@ public class RegPage{
 
 	//initializing the page objects
 
-	public RegPage(WebDriver driver){
-	PageFactory.initElements(driver, this);
+	public RegPage(){	
+		PageFactory.initElements(driver, this);
 
-		
 	}
-	
-	public RegPage() {
-		super();
-	}
-	
 
-	public  void fillForm(){
+	public  void FillingRegPage(){
 		register.click();
 
 		firstName.sendKeys("abc");

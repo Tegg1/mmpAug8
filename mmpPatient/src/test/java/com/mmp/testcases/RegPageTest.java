@@ -10,7 +10,7 @@ import com.mmp.pages.RegPage;
 public class RegPageTest extends TestBase {
 
 	WebDriver driver;
-	// adding a comment
+	// adding a comment again
 
 	@Test
 

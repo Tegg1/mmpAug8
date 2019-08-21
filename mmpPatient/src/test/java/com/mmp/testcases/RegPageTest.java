@@ -11,7 +11,7 @@ public class RegPageTest extends TestBase {
 
 	WebDriver driver;
 	// adding a comment again
-
+// adding
 	@Test
 
 	public void FillRegForm() {

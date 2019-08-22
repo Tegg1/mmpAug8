@@ -10,12 +10,17 @@ import org.openqa.selenium.support.ui.Select;
 
 public class RegPage {
 	
-	 WebDriver driver;
+	
 
 	
-		public RegPage(WebDriver driver) {
-			this.driver=driver;
-		}
+		
+
+	 WebDriver driver;
+
+
+		//public RegPage(WebDriver driver) {
+			//this.driver=driver;
+		//}
 	
 	
 	//creating Object repository
@@ -91,7 +96,7 @@ public class RegPage {
 
 	//initializing the page objects
 
-	public RegPage(){	
+	public RegPage(WebDriver driver){	
 		PageFactory.initElements(driver, this);
 
 	}
